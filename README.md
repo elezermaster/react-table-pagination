@@ -2,28 +2,28 @@
 **react table using pagination &amp; propTypes &amp; eslint**
 
 # using pagination<br /> Разработка постраничной нумерации
-//add ./utils/paginate.js<br />
+*add ./utils/paginate.js*<br />
 **import lodash from "lodash";**
 **export function paginate(items, activePageNumber, pageSize)**<br />
-//начальный индех элемента<br />
+*начальный индех элемента*<br />
 **const startIndex = (activePageNumber - 1) * pageSize;**<br />
-//отрежет массив начиная со startIndex<br />
+*отрежет массив начиная со startIndex*<br />
 **lodash.slice(items,startIndex)**<br />
-//количество элементов которые берем с этого массива pageSize<br />
+*количество элементов которые берем с этого массива pageSize*<br />
 **lodash.take(lodash.slice(items, startIndex), pageSize)**<br />
-//все вместе используя канкатенацию<br />
+*все вместе используя канкатенацию*<br />
 **return lodash(items).slice(startIndex).take(pageSize).value();**<br />
 }<br />
 <br />
-//import in users file<br />
+*import in users file*<br />
 **import {paginate} from '../utils/paginate'**<br />
-//using paginate<br />
+*using paginate*<br />
 **const userCrop = paginate(users, activePage, pageSize)**<br />
 ...<br />
 
 
 # using eslint<br />Рефакторинг кода
-//in .eslintrc.js<br />
+*in .eslintrc.js*<br />
 ...<br />
 **rules: {<br />
 indent: "off",<br />
@@ -43,9 +43,9 @@ quotes: "off",<br />
 <br />
 
 # using PropTypes<br />Проверка типов с помощью PropTypes
-installation<br />
+*installation*<br />
 **npm install --save prop-types**<br />
-//in User file<br />
+*in User file*<br />
 **import PropTypes from 'prop-types';**<br />
 ...<br />
 **User.propTypes = {<br />
