@@ -3,7 +3,7 @@
 
 # using pagination<br /> Разработка постраничной нумерации
 *add ./utils/paginate.js*<br />
-**import lodash from "lodash";**
+**import lodash from "lodash";**<br />
 **export function paginate(items, activePageNumber, pageSize)**<br />
 *начальный индех элемента*<br />
 **const startIndex = (activePageNumber - 1) * pageSize;**<br />
