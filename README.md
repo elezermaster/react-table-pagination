@@ -1,7 +1,7 @@
 # react-table-pagination
 **react table using pagination &amp; propTypes &amp; eslint**
 
-# using pagination
+# using pagination<br /> Разработка постраничной нумерации
 //add ./utils/paginate.js<br />
 **import lodash from "lodash";**
 **export function paginate(items, activePageNumber, pageSize)**<br />
@@ -22,7 +22,7 @@
 ...<br />
 
 
-# using eslint<br />
+# using eslint<br />Рефакторинг кода
 //in .eslintrc.js<br />
 ...<br />
 **rules: {<br />
@@ -42,8 +42,10 @@ quotes: "off",<br />
 ...<br />
 <br />
 
-# using PropTypes<br />
+# using PropTypes<br />Проверка типов с помощью PropTypes
 **import PropTypes from 'prop-types';**<br />
+installation<br />
+**npm install --save prop-types**<br />
 //in User file<br />
 ...<br />
 **User.propTypes = {<br />
