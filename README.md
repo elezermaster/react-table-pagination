@@ -8,24 +8,24 @@ react table using pagination &amp; propTypes &amp; eslint
 //начальный индех элемента<br />
 **const startIndex = (activePageNumber - 1) * pageSize;**<br />
 //отрежет массив начиная со startIndex<br />
-//lodash.slice(items,startIndex)<br />
+**lodash.slice(items,startIndex)**<br />
 //количество элементов которые берем с этого массива pageSize<br />
-//lodash.take(lodash.slice(items, startIndex), pageSize)<br />
+**lodash.take(lodash.slice(items, startIndex), pageSize)**<br />
 //все вместе используя канкатенацию<br />
-**return lodash(items).slice(startIndex).take(pageSize).value();**
+**return lodash(items).slice(startIndex).take(pageSize).value();**<br />
 }<br />
 <br />
 //import in users file<br />
-**import {paginate} from '../utils/paginate'**
+**import {paginate} from '../utils/paginate'**<br />
 //using paginate<br />
-**const userCrop = paginate(users, activePage, pageSize)**
+**const userCrop = paginate(users, activePage, pageSize)**<br />
 ...<br />
 
 
-using eslint<br />
+# using eslint<br />
 //in .eslintrc.js<br />
 ...<br />
-rules: {<br />
+**rules: {<br />
 indent: "off",<br />
 "no-tabs": 0,<br />
 semi: 0,<br />
@@ -37,19 +37,19 @@ quotes: "off",<br />
 "object-curly-spacing": ["error", "never", {arraysInObjects: true,objectsInObjects: true}],<br />
 "computed-property-spacing": ["error", "never"],<br />
 "comma-dangle": [2, "always-multiline"],<br />
-"react/prop-types": "off",<br />
+"react/prop-types": "off",**<br />
 },<br />
 ...<br />
 <br />
 
-using PropTypes<br />
-import PropTypes from 'prop-types';<br />
+# using PropTypes<br />
+**import PropTypes from 'prop-types';**<br />
 //in User file<br />
 ...<br />
-User.propTypes = {<br />
+**User.propTypes = {<br />
 user: PropTypes.object.isRequired,<br />
 index: PropTypes.number.isRequired,<br />
 onDelete: PropTypes.func.isRequired,<br />
 onToggleBookmark: PropTypes.func.isRequired,<br />
-}<br />
+}**<br />
 export default User;<br />
