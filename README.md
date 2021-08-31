@@ -1,24 +1,24 @@
 # react-table-pagination
 react table using pagination &amp; propTypes &amp; eslint 
 
-#using pagination<br />
+# using pagination
 //add ./utils/paginate.js<br />
-##import lodash from "lodash";<br />
-##export function paginate(items, activePageNumber, pageSize) {<br />
+**import lodash from "lodash";**
+**export function paginate(items, activePageNumber, pageSize)**<br />
 //начальный индех элемента<br />
-##const startIndex = (activePageNumber - 1) * pageSize;<br />
+**const startIndex = (activePageNumber - 1) * pageSize;**<br />
 //отрежет массив начиная со startIndex<br />
 //lodash.slice(items,startIndex)<br />
 //количество элементов которые берем с этого массива pageSize<br />
 //lodash.take(lodash.slice(items, startIndex), pageSize)<br />
 //все вместе используя канкатенацию<br />
-##return lodash(items).slice(startIndex).take(pageSize).value();<br />
+**return lodash(items).slice(startIndex).take(pageSize).value();**
 }<br />
 <br />
 //import in users file<br />
-import {paginate} from '../utils/paginate'<br />
+**import {paginate} from '../utils/paginate'**
 //using paginate<br />
-const userCrop = paginate(users, activePage, pageSize)<br />
+**const userCrop = paginate(users, activePage, pageSize)**
 ...<br />
 
 
