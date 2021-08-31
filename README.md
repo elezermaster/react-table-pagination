@@ -1,5 +1,5 @@
 # react-table-pagination
-react table using pagination &amp; propTypes &amp; eslint 
+**react table using pagination &amp; propTypes &amp; eslint **
 
 # using pagination
 //add ./utils/paginate.js<br />
