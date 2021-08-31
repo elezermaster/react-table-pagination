@@ -43,10 +43,10 @@ quotes: "off",<br />
 <br />
 
 # using PropTypes<br />Проверка типов с помощью PropTypes
-**import PropTypes from 'prop-types';**<br />
 installation<br />
 **npm install --save prop-types**<br />
 //in User file<br />
+**import PropTypes from 'prop-types';**<br />
 ...<br />
 **User.propTypes = {<br />
 user: PropTypes.object.isRequired,<br />
